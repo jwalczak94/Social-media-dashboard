@@ -5,8 +5,13 @@
 
 @layer base {
   body {
-    @apply font-bodyFont text-textGreyLight dark:text-textBlueDark dark:bg-backgroundDark;
+    @apply font-bodyFont text-textGreyLight dark:text-textBlueDark dark:bg-backgroundDark relative;
     line-height: 1.22;
+  }
+
+  main::after {
+    @apply bg-backgroundTopLight dark:bg-backgroundTopDark inline-block absolute top-0 left-0 w-full h-[15.25rem] rounded-b-3xl -z-10;
+    content: "";
   }
 
   h1 {
