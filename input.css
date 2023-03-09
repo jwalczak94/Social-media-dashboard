@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  body {
+    @apply font-bodyFont text-textGreyLight dark:text-textBlueDark dark:bg-backgroundDark;
+    line-height: 1.22;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 1.412rem + 0.3756vw, 1.75rem);
+    font-weight: 700;
+  }
+
+  @media (hover: hover) {
+    .card:hover {
+      @apply hover:bg-cardHover cursor-pointer duration-300;
+    }
+  }
+}
+
+@layer components {
+  .toggle-checkbox:checked + .toggle-label {
+    @apply bg-gradient-to-l from-gradientStart to-gradientEnd;
+  }
+  .card-big {
+    @apply pt-8 pb-6 border-t-4 rounded-md bg-cardLight text-center dark:bg-cardDark;
+  }
+  .card-small {
+    @apply pt-7 pb-5 pl-6 pr-7 rounded-md bg-cardLight text-center dark:bg-cardDark;
+  }
+}

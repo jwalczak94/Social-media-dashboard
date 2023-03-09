@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main>
+      <header
+        class="px-6 mt-9 mb-10 sm:flex sm:items-center sm:justify-between md:px-10 md:mb-[46px] xl:px-0 xl:max-w-[1110px] xl:mx-auto">
+        <div class="pb-6 border-b-2 sm:border-0 sm:pb-0">
+          <h1 class="text-textBlueLight mb-1 dark:text-whiteFont">Social Media Dashboard</h1>
+          <p class="text-sm font-bold">Total Followers: 23,004</p>
+        </div>
+
+        <!-- TOGGLE BETWEEN DARK/LIGHT MODE -->
+        <div class="flex justify-between mt-4 sm:gap-4 sm:mt-0 sm:justify-center">
+          <span class="text-sm font-bold">Dark Mode</span>
+          <div class="relative w-12 select-none transition duration-200 ease-in">
+            <input
+              type="checkbox"
+              name="toggle"
+              id="toggle"
+              class="toggle-checkbox absolute block right-0 rounded-full cursor-pointer h-[1.125rem] w-[1.125rem] appearance-none bg-white m-[3px] checked:left-0 checked:bg-cardDark" />
+            <label
+              for="toggle"
+              class="toggle-label block overflow-hidden h-[1.5rem] bg-themeUnabled rounded-full cursor-pointer"></label>
+          </div>
+        </div>
+      </header>
+
+      <section
+        class="px-6 mb-12 md:px-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4 xl:px-0 xl:max-w-[1110px] xl:mx-auto xl:gap-[30px]">
+        <!-- FACEBOOK BOX -->
+        <div class="card card-big border-facebookColor">
+          <div class="flex justify-center items-center gap-2 mb-7">
+            <img src="images/icon-facebook.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold">@nathanf</span>
+          </div>
+          <div class="mb-6">
+            <p
+              class="font-bold text-[56px] text-textBlueLight tracking-tight leading-[48px] mb-2 dark:text-whiteFont">
+              1987
+            </p>
+            <span class="text-xs tracking-[5px] uppercase">Followers</span>
+          </div>
+          <div class="flex justify-center items-center gap-1">
+            <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold text-limeGreen">12 Today</span>
+          </div>
+        </div>
+
+        <!-- TWITTER BOX -->
+        <div class="card card-big border-twitterColor">
+          <div class="flex justify-center items-center gap-2 mb-7">
+            <img src="images/icon-twitter.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold">@nathanf</span>
+          </div>
+          <div class="mb-6">
+            <p
+              class="font-bold text-[56px] text-textBlueLight tracking-tight leading-[48px] mb-2 dark:text-whiteFont">
+              1044
+            </p>
+            <span class="text-xs tracking-[5px] uppercase">Followers</span>
+          </div>
+          <div class="flex justify-center items-center gap-1">
+            <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold text-limeGreen">99 Today</span>
+          </div>
+        </div>
+
+        <!-- INSTAGRAM BOX -->
+        <div class="card card-big border-instagramColor1">
+          <div class="flex justify-center items-center gap-2 mb-7">
+            <img src="images/icon-instagram.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold">@realnathanf</span>
+          </div>
+          <div class="mb-6">
+            <p
+              class="font-bold text-[56px] text-textBlueLight tracking-tight leading-[48px] mb-2 dark:text-whiteFont">
+              11k
+            </p>
+            <span class="text-xs tracking-[5px] uppercase">Followers</span>
+          </div>
+          <div class="flex justify-center items-center gap-1">
+            <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold text-limeGreen">1099 Today</span>
+          </div>
+        </div>
+
+        <!-- YOUTUBE BOX -->
+        <div class="card card-big border-youTubeColor">
+          <div class="flex justify-center items-center gap-2 mb-7">
+            <img src="images/icon-youtube.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold">Nathan F.</span>
+          </div>
+          <div class="mb-6">
+            <p
+              class="font-bold text-[56px] text-textBlueLight tracking-tight leading-[48px] mb-2 dark:text-whiteFont">
+              8239
+            </p>
+            <span class="text-xs tracking-[5px] uppercase">Subscribers</span>
+          </div>
+          <div class="flex justify-center items-center gap-1">
+            <img src="images/icon-down.svg" alt="" aria-hidden="true" />
+            <span class="text-xs font-bold text-brightRed">144 Today</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section class="px-6 mb-11 md:px-10 xl:mb-[4.5rem] xl:px-0 xl:max-w-[1110px] xl:mx-auto">
+        <h2 class="font-bold text-[1.5rem] text-textGreyLight mb-6 dark:text-whiteFont">
+          Overview - Today
+        </h2>
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-[30px]">
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Pages Views</span>
+              <img src="images/icon-facebook.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">87</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-limeGreen">3%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Likes</span>
+              <img src="images/icon-facebook.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">52</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-down.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-brightRed">2%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Likes</span>
+              <img src="images/icon-instagram.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">5462</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-limeGreen">2257%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Profile Views</span>
+              <img src="images/icon-instagram.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">52k</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-limeGreen">1375%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Retweets</span>
+              <img src="images/icon-twitter.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">117</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-limeGreen">303%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Likes</span>
+              <img src="images/icon-twitter.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">507</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-limeGreen">553%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Likes</span>
+              <img src="images/icon-youtube.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">107</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-down.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-brightRed">19%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="flex justify-between items-center mb-[1.25rem]">
+              <span class="text-sm font-bold">Total Views</span>
+              <img src="images/icon-youtube.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[2rem] text-textBlueLight dark:text-whiteFont">1407</span>
+              <div class="flex justify-center items-center">
+                <img src="images/icon-down.svg" alt="" aria-hidden="true" />
+                <span class="text-xs font-bold text-brightRed">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <!-- SCRIPT TO TOGGLE -->
+  <script>
+    document.getElementById("toggle").addEventListener("change", function () {
+      if (this.checked) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    });
+  </script>
+</html>
